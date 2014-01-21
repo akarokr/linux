@@ -23,6 +23,7 @@
 #include <linux/mmu_notifier.h>
 #include <linux/migrate.h>
 #include <linux/perf_event.h>
+#include <linux/ksm.h>
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
 #include <asm/cacheflush.h>
@@ -62,6 +63,7 @@ static unsigned long change_pte_range(struct vm_area_struct *vma, pmd_t *pmd,
 				struct page *page;
 
 				page = vm_normal_page(vma, addr, oldpte);
+<<<<<<< HEAD
 				if (page) {
 					int this_nid = page_to_nid(page);
 					if (last_nid == -1)
@@ -72,6 +74,10 @@ static unsigned long change_pte_range(struct vm_area_struct *vma, pmd_t *pmd,
 					/* only check non-shared pages */
 					if (!pte_numa(oldpte) &&
 					    page_mapcount(page) == 1) {
+=======
+				if (page && !PageKsm(page)) {
+					if (!pte_numa(oldpte)) {
+>>>>>>> 64a9a34... mm: numa: do not automatically migrate KSM pages
 						ptent = pte_mknuma(ptent);
 						updated = true;
 					}
