@@ -809,7 +809,7 @@ void ioat2_free_chan_resources(struct dma_chan *c)
 	if (!ioat->ring)
 		return;
 
-	tasklet_disable(&chan->cleanup_task);
+	tasklet_kill(&chan->cleanup_task);
 	del_timer_sync(&chan->timer);
 	device->cleanup_fn((unsigned long) c);
 	device->reset_hw(chan);
