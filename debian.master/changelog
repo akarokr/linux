@@ -1,0 +1,8 @@
+linux (3.10.31-metacloud.0305201412) precise; urgency=low
+
+  * Mainline build at commit: v3.10.31
+  * Updated bnx2 and bnx2x drivers to HEAD
+  * Added header files needed to build tools packages on precise
+  * Patched tasklet cleanup https://lkml.org/lkml/2014/1/29/401
+
+ -- David Pippenger <pip@metacloud.com>  Wed, 05 Mar 2014 10:08:30 -0800
