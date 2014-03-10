@@ -379,7 +379,7 @@ static void ioat1_dma_free_chan_resources(struct dma_chan *c)
 	if (ioat->desccount == 0)
 		return;
 
-	tasklet_kill(&chan->cleanup_task);
+	tasklet_disable(&chan->cleanup_task);
 	del_timer_sync(&chan->timer);
 	ioat1_cleanup(ioat);
 
