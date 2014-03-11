@@ -1,11 +1,11 @@
 # arch	version		flavour		installedname			suffix	bdep
-amd64	3.10.33-metacloud	generic		3.10.33-metacloud-generic		-	
+amd64	3.10.33-metacloud1	generic		3.10.33-metacloud1-generic		-	
 
-i386	3.10.33-metacloud	generic		3.10.33-metacloud-generic		-	
+i386	3.10.33-metacloud1	generic		3.10.33-metacloud1-generic		-	
 
-armhf	3.10.33-metacloud	generic		3.10.33-metacloud-generic		-
+armhf	3.10.33-metacloud1	generic		3.10.33-metacloud1-generic		-
 
-armhf	3.10.33-metacloud	generic-lpae		3.10.33-metacloud-generic-lpae		-
+armhf	3.10.33-metacloud1	generic-lpae		3.10.33-metacloud1-generic-lpae		-
 
 # Ports
 # arch	version		flavour		installedname			suffix	bdep
