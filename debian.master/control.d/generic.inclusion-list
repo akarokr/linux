@@ -4,6 +4,7 @@ arch/x86/kvm/kvm-intel.ko
 arch/x86/kvm/kvm-amd.ko
 crypto/*
 drivers/acpi/*
+drivers/dca/dca.ko
 drivers/ata/ahci_platform.ko
 drivers/ata/ahci.ko
 drivers/ata/acard-ahci.ko
@@ -19,6 +20,7 @@ drivers/char/nvram.ko
 drivers/char/ppdev.ko
 drivers/char/raw.ko
 drivers/hv/*
+drivers/i2c/algos/i2c-algo-bit.ko
 drivers/infiniband/core/ib_core.ko
 drivers/infiniband/core/ib_addr.ko
 drivers/infiniband/core/ib_cm.ko
@@ -37,7 +39,6 @@ drivers/input/misc/xen-kbdfront.ko
 drivers/md/*
 drivers/message/fusion*
 drivers/misc/vmw_balloon.ko
-drivers/net/mii.ko
 drivers/net/ethernet/8390/8390.ko
 drivers/net/ethernet/realtek/8139too.ko
 drivers/net/ethernet/realtek/8139cp.ko
@@ -51,6 +52,8 @@ drivers/net/eql.ko
 drivers/net/ifb.ko
 drivers/net/ethernet/intel/igbvf/igbvf.ko
 drivers/net/ethernet/intel/ixgbevf/ixgbevf.ko
+drivers/net/ethernet/intel/igb/igb.ko
+drivers/net/ethernet/intel/ixgb/ixgb.ko
 drivers/net/macvlan.ko
 drivers/net/macvtap.ko
 drivers/net/ethernet/8390/ne2k-pci.ko
@@ -89,7 +92,6 @@ drivers/video/output.ko
 drivers/video/syscopyarea.ko
 drivers/video/sysfillrect.ko
 drivers/video/sysimgblt.ko
-drivers/video/vesafb.ko
 drivers/video/vga16fb.ko
 drivers/video/vgastate.ko
 drivers/video/xen-fbfront.ko
