@@ -36,8 +36,8 @@ atmel_pci ?
 b44 ?
 be2net ?
 bmac ?
-bnx2 ?
-bnx2x ?
+bnx2 
+bnx2x 
 bonding ?
 brcmfmac ?
 brcmsmac ?
@@ -57,9 +57,9 @@ depca ?
 dl2k ?
 dmfe ?
 dummy ?
-e100 ?
-e1000 ?
-e1000e ?
+e100 
+e1000 
+e1000e 
 e2100 ?
 eepro ?
 eepro100 ?
@@ -72,7 +72,7 @@ eth16i ?
 ewrk3 ?
 fealnx ?
 forcedeth ?
-igb ?
+igb 
 ps3_gelic ?
 hamachi ?
 hermes ?
@@ -88,8 +88,8 @@ iwl4965 ?
 iwl-legacy ?
 iwldvm ?
 iwlwifi ?
-ixgb ?
-ixgbe ?
+ixgb 
+ixgbe 
 lance ?
 lanstreamer ?
 lasi_82596 ?

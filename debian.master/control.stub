@@ -9,7 +9,7 @@ Vcs-Git: http://kernel.ubuntu.com/git-repos/ubuntu/ubuntu-saucy.git
 XS-Testsuite: autopkgtest
 #XS-Testsuite-Depends: gcc-4.7 binutils
 
-Package: linux-source-3.10.33
+Package: linux-source-3.11.0
 Architecture: all
 Section: devel
 Priority: optional
@@ -17,9 +17,9 @@ Provides: linux-source, linux-source-3
 Depends: ${misc:Depends}, binutils, bzip2, coreutils | fileutils (>= 4.0)
 Recommends: libc-dev, gcc, make
 Suggests: libncurses-dev | ncurses-dev, kernel-package, libqt3-dev
-Description: Linux kernel source for version 3.10.33 with Ubuntu patches
+Description: Linux kernel source for version 3.11.0 with Ubuntu patches
  This package provides the source code for the Linux kernel version
- 3.10.33.
+ 3.11.0.
  .
  This package is mainly meant for other packages to use, in order to build
  custom flavours.
@@ -39,8 +39,8 @@ Priority: optional
 Depends: ${misc:Depends}
 Conflicts: linux-doc-3
 Replaces: linux-doc-3
-Description: Linux kernel specific documentation for version 3.10.33
- This package provides the various documents in the 3.10.33 kernel
+Description: Linux kernel specific documentation for version 3.11.0
+ This package provides the various documents in the 3.11.0 kernel
  Documentation/ subdirectory.  These document kernel subsystems, APIs, device
  drivers, and so on.  See
  /usr/share/doc/linux-doc/00-INDEX for a list of what is
@@ -52,20 +52,20 @@ Section: kernel
 Priority: optional
 Depends: ${misc:Depends}
 Replaces: linux-tools (<= 2.6.32-16.25)
-Description: Linux kernel version specific tools for version 3.10.33
+Description: Linux kernel version specific tools for version 3.11.0
  This package provides the architecture independent parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy) for
  version PGKVER.
 
-Package: linux-headers-3.10.33-metacloud1
+Package: linux-headers-3.11.0-26
 Architecture: all
 Section: devel
 Priority: optional
 Depends: ${misc:Depends}, coreutils | fileutils (>= 4.0)
-Description: Header files related to Linux kernel version 3.10.33
- This package provides kernel header files for version 3.10.33, for sites
+Description: Header files related to Linux kernel version 3.11.0
+ This package provides kernel header files for version 3.11.0, for sites
  that want the latest kernel headers. Please read
- /usr/share/doc/linux-headers-3.10.33-metacloud1/debian.README.gz for details
+ /usr/share/doc/linux-headers-3.11.0-26/debian.README.gz for details
 
 Package: linux-libc-dev
 Architecture: i386 amd64 armhf arm64 x32 powerpc
@@ -80,20 +80,20 @@ Description: Linux Kernel Headers for development
  libraries. They are NOT meant to be used to build third-party modules for
  your kernel. Use linux-headers-* packages for that.
 
-Package: linux-tools-3.10.33-metacloud1
+Package: linux-tools-3.11.0-26
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
 Depends: ${misc:Depends}, ${shlibs:Depends}, linux-tools-common
-Description: Linux kernel version specific tools for version 3.10.33-metacloud1
+Description: Linux kernel version specific tools for version 3.11.0-26
  This package provides the architecture dependant parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy) for
- version 3.10.33-metacloud1 on
+ version 3.11.0-26 on
  64 bit x86.
- You probabally want to install linux-tools-3.10.33-metacloud1-<flavour>.
+ You probabally want to install linux-tools-3.11.0-26-<flavour>.
 
 
-Package: linux-image-3.10.33-metacloud1-generic
+Package: linux-image-3.11.0-26-generic
 Architecture: i386 amd64 armhf
 Section: kernel
 Priority: optional
@@ -102,9 +102,9 @@ Provides: linux-image, linux-image-3.0, fuse-module, kvm-api-4, redhat-cluster-m
 Depends: ${misc:Depends}, ${shlibs:Depends}, initramfs-tools (>= 0.36ubuntu6), module-init-tools (>= 3.3-pre11-4ubuntu3)
 Conflicts: hotplug (<< 0.0.20040105-1)
 Recommends: grub-pc [i386 amd64 x32] | grub-efi-amd64 [amd64 x32] | grub-efi-ia32 [i386 amd64 x32] | grub [i386 amd64 x32] | lilo (>= 19.1) [i386 amd64 x32] | flash-kernel [armhf arm64]
-Suggests: fdutils, linux-doc-3.10.33 | linux-source-3.10.33, linux-tools, linux-headers-3.10.33-metacloud1-generic
-Description: Linux kernel image for version 3.10.33 on 64 bit x86 SMP
- This package contains the Linux kernel image for version 3.10.33 on
+Suggests: fdutils, linux-doc-3.11.0 | linux-source-3.11.0, linux-tools, linux-headers-3.11.0-26-generic
+Description: Linux kernel image for version 3.11.0 on 64 bit x86 SMP
+ This package contains the Linux kernel image for version 3.11.0 on
  64 bit x86 SMP.
  .
  Also includes the corresponding System.map file, the modules built by the
@@ -119,13 +119,13 @@ Description: Linux kernel image for version 3.10.33 on 64 bit x86 SMP
  the linux-generic meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-image-extra-3.10.33-metacloud1-generic
+Package: linux-image-extra-3.11.0-26-generic
 Architecture: i386 amd64 armhf
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.10.33-metacloud1-generic, crda (>=1.1.1-1ubuntu2) | wireless-crda
-Description: Linux kernel extra modules for version 3.10.33 on 64 bit x86 SMP
- This package contains the Linux kernel extra modules for version 3.10.33 on
+Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.11.0-26-generic, crda (>=1.1.1-1ubuntu2) | wireless-crda
+Description: Linux kernel extra modules for version 3.11.0 on 64 bit x86 SMP
+ This package contains the Linux kernel extra modules for version 3.11.0 on
  64 bit x86 SMP.
  .
  Also includes the corresponding System.map file, the modules built by the
@@ -140,27 +140,27 @@ Description: Linux kernel extra modules for version 3.10.33 on 64 bit x86 SMP
  the linux-generic meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-headers-3.10.33-metacloud1-generic
+Package: linux-headers-3.11.0-26-generic
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-headers-3.10.33-metacloud1, ${shlibs:Depends}
+Depends: ${misc:Depends}, linux-headers-3.11.0-26, ${shlibs:Depends}
 Provides: linux-headers, linux-headers-3.0
-Description: Linux kernel headers for version 3.10.33 on 64 bit x86 SMP
- This package provides kernel header files for version 3.10.33 on
+Description: Linux kernel headers for version 3.11.0 on 64 bit x86 SMP
+ This package provides kernel header files for version 3.11.0 on
  64 bit x86 SMP.
  .
  This is for sites that want the latest kernel headers.  Please read
- /usr/share/doc/linux-headers-3.10.33-metacloud1/debian.README.gz for details.
+ /usr/share/doc/linux-headers-3.11.0-26/debian.README.gz for details.
 
-Package: linux-image-3.10.33-metacloud1-generic-dbgsym
+Package: linux-image-3.11.0-26-generic-dbgsym
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
 Depends: ${misc:Depends}
 Provides: linux-debug
-Description: Linux kernel debug image for version 3.10.33 on 64 bit x86 SMP
- This package provides a kernel debug image for version 3.10.33 on
+Description: Linux kernel debug image for version 3.11.0 on 64 bit x86 SMP
+ This package provides a kernel debug image for version 3.11.0 on
  64 bit x86 SMP.
  .
  This is for sites that wish to debug the kernel.
@@ -169,15 +169,15 @@ Description: Linux kernel debug image for version 3.10.33 on 64 bit x86 SMP
  is uncompressed, and unstripped. This package also includes the
  unstripped modules.
 
-Package: linux-tools-3.10.33-metacloud1-generic
+Package: linux-tools-3.11.0-26-generic
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-tools-3.10.33-metacloud1
-Description: Linux kernel version specific tools for version 3.10.33-metacloud1
+Depends: ${misc:Depends}, linux-tools-3.11.0-26
+Description: Linux kernel version specific tools for version 3.11.0-26
  This package provides the architecture dependant parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy) for
- version 3.10.33-metacloud1 on
+ version 3.11.0-26 on
  64 bit x86.
 
 Package: linux-udebs-generic
@@ -190,7 +190,7 @@ Description: Metapackage depending on kernel udebs
  for easier version and migration tracking.
 
 
-Package: linux-image-3.10.33-metacloud1-generic-lpae
+Package: linux-image-3.11.0-26-generic-lpae
 Architecture: armhf
 Section: kernel
 Priority: optional
@@ -199,9 +199,9 @@ Provides: linux-image, linux-image-3.0, fuse-module, kvm-api-4, redhat-cluster-m
 Depends: ${misc:Depends}, ${shlibs:Depends}, initramfs-tools (>= 0.36ubuntu6), module-init-tools (>= 3.3-pre11-4ubuntu3)
 Conflicts: hotplug (<< 0.0.20040105-1)
 Recommends: flash-kernel [armhf]
-Suggests: fdutils, linux-doc-3.10.33 | linux-source-3.10.33, linux-tools, linux-headers-3.10.33-metacloud1-generic-lpae
-Description: Linux kernel image for version 3.10.33 on 64 bit x86 SMP
- This package contains the Linux kernel image for version 3.10.33 on
+Suggests: fdutils, linux-doc-3.11.0 | linux-source-3.11.0, linux-tools, linux-headers-3.11.0-26-generic-lpae
+Description: Linux kernel image for version 3.11.0 on 64 bit x86 SMP
+ This package contains the Linux kernel image for version 3.11.0 on
  64 bit x86 SMP.
  .
  Also includes the corresponding System.map file, the modules built by the
@@ -216,13 +216,13 @@ Description: Linux kernel image for version 3.10.33 on 64 bit x86 SMP
  the linux-generic-lpae meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-image-extra-3.10.33-metacloud1-generic-lpae
+Package: linux-image-extra-3.11.0-26-generic-lpae
 Architecture: armhf
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.10.33-metacloud1-generic-lpae, crda (>=1.1.1-1ubuntu2) | wireless-crda
-Description: Linux kernel extra modules for version 3.10.33 on 64 bit x86 SMP
- This package contains the Linux kernel extra modules for version 3.10.33 on
+Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.11.0-26-generic-lpae, crda (>=1.1.1-1ubuntu2) | wireless-crda
+Description: Linux kernel extra modules for version 3.11.0 on 64 bit x86 SMP
+ This package contains the Linux kernel extra modules for version 3.11.0 on
  64 bit x86 SMP.
  .
  Also includes the corresponding System.map file, the modules built by the
@@ -237,27 +237,27 @@ Description: Linux kernel extra modules for version 3.10.33 on 64 bit x86 SMP
  the linux-generic-lpae meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-headers-3.10.33-metacloud1-generic-lpae
+Package: linux-headers-3.11.0-26-generic-lpae
 Architecture: armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-headers-3.10.33-metacloud1, ${shlibs:Depends}
+Depends: ${misc:Depends}, linux-headers-3.11.0-26, ${shlibs:Depends}
 Provides: linux-headers, linux-headers-3.0
-Description: Linux kernel headers for version 3.10.33 on 64 bit x86 SMP
- This package provides kernel header files for version 3.10.33 on
+Description: Linux kernel headers for version 3.11.0 on 64 bit x86 SMP
+ This package provides kernel header files for version 3.11.0 on
  64 bit x86 SMP.
  .
  This is for sites that want the latest kernel headers.  Please read
- /usr/share/doc/linux-headers-3.10.33-metacloud1/debian.README.gz for details.
+ /usr/share/doc/linux-headers-3.11.0-26/debian.README.gz for details.
 
-Package: linux-image-3.10.33-metacloud1-generic-lpae-dbgsym
+Package: linux-image-3.11.0-26-generic-lpae-dbgsym
 Architecture: armhf
 Section: devel
 Priority: optional
 Depends: ${misc:Depends}
 Provides: linux-debug
-Description: Linux kernel debug image for version 3.10.33 on 64 bit x86 SMP
- This package provides a kernel debug image for version 3.10.33 on
+Description: Linux kernel debug image for version 3.11.0 on 64 bit x86 SMP
+ This package provides a kernel debug image for version 3.11.0 on
  64 bit x86 SMP.
  .
  This is for sites that wish to debug the kernel.
@@ -266,15 +266,15 @@ Description: Linux kernel debug image for version 3.10.33 on 64 bit x86 SMP
  is uncompressed, and unstripped. This package also includes the
  unstripped modules.
 
-Package: linux-tools-3.10.33-metacloud1-generic-lpae
+Package: linux-tools-3.11.0-26-generic-lpae
 Architecture: armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-tools-3.10.33-metacloud1
-Description: Linux kernel version specific tools for version 3.10.33-metacloud1
+Depends: ${misc:Depends}, linux-tools-3.11.0-26
+Description: Linux kernel version specific tools for version 3.11.0-26
  This package provides the architecture dependant parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy) for
- version 3.10.33-metacloud1 on
+ version 3.11.0-26 on
  64 bit x86.
 
 Package: linux-udebs-generic-lpae
