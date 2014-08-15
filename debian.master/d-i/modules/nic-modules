@@ -72,7 +72,7 @@ eth16i ?
 ewrk3 ?
 fealnx ?
 forcedeth ?
-igb 
+igb ?
 ps3_gelic ?
 hamachi ?
 hermes ?
@@ -88,8 +88,8 @@ iwl4965 ?
 iwl-legacy ?
 iwldvm ?
 iwlwifi ?
-ixgb 
-ixgbe 
+ixgb ?
+ixgbe ?
 lance ?
 lanstreamer ?
 lasi_82596 ?
