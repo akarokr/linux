@@ -117,7 +117,8 @@ ifeq ($(do_tools_common),true)
 	install -m644 $(CURDIR)/tools/power/x86/x86_energy_perf_policy/*.8 $(toolsman)/man8
 	install -m644 $(CURDIR)/tools/power/x86/turbostat/*.8 $(toolsman)/man8
 
-	install -m644 $(CURDIR)/tools/hv/*.8 $(toolsman)/man8
+	#This doesn't exist DLP
+	#install -m644 $(CURDIR)/tools/hv/*.8 $(toolsman)/man8
 endif
 
 install-indep: install-tools
