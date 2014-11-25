@@ -63,8 +63,7 @@ static unsigned long change_pte_range(struct vm_area_struct *vma, pmd_t *pmd,
 				struct page *page;
 
 				page = vm_normal_page(vma, addr, oldpte);
-<<<<<<< HEAD
-				if (page) {
+				if (page && !PageKsm(page)) {
 					int this_nid = page_to_nid(page);
 					if (last_nid == -1)
 						last_nid = this_nid;
@@ -74,10 +73,6 @@ static unsigned long change_pte_range(struct vm_area_struct *vma, pmd_t *pmd,
 					/* only check non-shared pages */
 					if (!pte_numa(oldpte) &&
 					    page_mapcount(page) == 1) {
-=======
-				if (page && !PageKsm(page)) {
-					if (!pte_numa(oldpte)) {
->>>>>>> 64a9a34... mm: numa: do not automatically migrate KSM pages
 						ptent = pte_mknuma(ptent);
 						updated = true;
 					}
