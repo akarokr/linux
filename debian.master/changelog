@@ -1,3 +1,9 @@
+linux (3.10.53-metacloud2.201411251146) precise; urgency=low
+
+  * Add KSM fixes for NUMA enabled systems 
+
+ -- David Pippenger <pip@metacloud.com>  Tue, 25 Nov 2014 11:46:00 -0800
+
 linux (3.10.53-metacloud1.201403111102ubuntu1) precise; urgency=low
 
   * Merge 3.10.53 from upstream
