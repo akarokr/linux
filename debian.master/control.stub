@@ -57,7 +57,7 @@ Description: Linux kernel version specific tools for version 3.10.53
  version locked tools (such as perf and x86_energy_perf_policy) for
  version PGKVER.
 
-Package: linux-headers-3.10.53-metacloud3
+Package: linux-headers-3.10.53-metacloud5
 Architecture: all
 Section: devel
 Priority: optional
@@ -65,7 +65,7 @@ Depends: ${misc:Depends}, coreutils | fileutils (>= 4.0)
 Description: Header files related to Linux kernel version 3.10.53
  This package provides kernel header files for version 3.10.53, for sites
  that want the latest kernel headers. Please read
- /usr/share/doc/linux-headers-3.10.53-metacloud3/debian.README.gz for details
+ /usr/share/doc/linux-headers-3.10.53-metacloud5/debian.README.gz for details
 
 Package: linux-libc-dev
 Architecture: i386 amd64 armhf arm64 x32 powerpc
@@ -80,20 +80,20 @@ Description: Linux Kernel Headers for development
  libraries. They are NOT meant to be used to build third-party modules for
  your kernel. Use linux-headers-* packages for that.
 
-Package: linux-tools-3.10.53-metacloud3
+Package: linux-tools-3.10.53-metacloud5
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
 Depends: ${misc:Depends}, ${shlibs:Depends}, linux-tools-common
-Description: Linux kernel version specific tools for version 3.10.53-metacloud3
+Description: Linux kernel version specific tools for version 3.10.53-metacloud5
  This package provides the architecture dependant parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy) for
- version 3.10.53-metacloud3 on
+ version 3.10.53-metacloud5 on
  64 bit x86.
- You probabally want to install linux-tools-3.10.53-metacloud3-<flavour>.
+ You probabally want to install linux-tools-3.10.53-metacloud5-<flavour>.
 
 
-Package: linux-image-3.10.53-metacloud3-generic
+Package: linux-image-3.10.53-metacloud5-generic
 Architecture: i386 amd64 armhf
 Section: kernel
 Priority: optional
@@ -102,7 +102,7 @@ Provides: linux-image, linux-image-3.0, fuse-module, kvm-api-4, redhat-cluster-m
 Depends: ${misc:Depends}, ${shlibs:Depends}, initramfs-tools (>= 0.36ubuntu6), module-init-tools (>= 3.3-pre11-4ubuntu3)
 Conflicts: hotplug (<< 0.0.20040105-1)
 Recommends: grub-pc [i386 amd64 x32] | grub-efi-amd64 [amd64 x32] | grub-efi-ia32 [i386 amd64 x32] | grub [i386 amd64 x32] | lilo (>= 19.1) [i386 amd64 x32] | flash-kernel [armhf arm64]
-Suggests: fdutils, linux-doc-3.10.53 | linux-source-3.10.53, linux-tools, linux-headers-3.10.53-metacloud3-generic
+Suggests: fdutils, linux-doc-3.10.53 | linux-source-3.10.53, linux-tools, linux-headers-3.10.53-metacloud5-generic
 Description: Linux kernel image for version 3.10.53 on 64 bit x86 SMP
  This package contains the Linux kernel image for version 3.10.53 on
  64 bit x86 SMP.
@@ -119,11 +119,11 @@ Description: Linux kernel image for version 3.10.53 on 64 bit x86 SMP
  the linux-generic meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-image-extra-3.10.53-metacloud3-generic
+Package: linux-image-extra-3.10.53-metacloud5-generic
 Architecture: i386 amd64 armhf
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.10.53-metacloud3-generic, crda (>=1.1.1-1ubuntu2) | wireless-crda
+Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.10.53-metacloud5-generic, crda (>=1.1.1-1ubuntu2) | wireless-crda
 Description: Linux kernel extra modules for version 3.10.53 on 64 bit x86 SMP
  This package contains the Linux kernel extra modules for version 3.10.53 on
  64 bit x86 SMP.
@@ -140,20 +140,20 @@ Description: Linux kernel extra modules for version 3.10.53 on 64 bit x86 SMP
  the linux-generic meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-headers-3.10.53-metacloud3-generic
+Package: linux-headers-3.10.53-metacloud5-generic
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-headers-3.10.53-metacloud3, ${shlibs:Depends}
+Depends: ${misc:Depends}, linux-headers-3.10.53-metacloud5, ${shlibs:Depends}
 Provides: linux-headers, linux-headers-3.0
 Description: Linux kernel headers for version 3.10.53 on 64 bit x86 SMP
  This package provides kernel header files for version 3.10.53 on
  64 bit x86 SMP.
  .
  This is for sites that want the latest kernel headers.  Please read
- /usr/share/doc/linux-headers-3.10.53-metacloud3/debian.README.gz for details.
+ /usr/share/doc/linux-headers-3.10.53-metacloud5/debian.README.gz for details.
 
-Package: linux-image-3.10.53-metacloud3-generic-dbgsym
+Package: linux-image-3.10.53-metacloud5-generic-dbgsym
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
@@ -169,15 +169,15 @@ Description: Linux kernel debug image for version 3.10.53 on 64 bit x86 SMP
  is uncompressed, and unstripped. This package also includes the
  unstripped modules.
 
-Package: linux-tools-3.10.53-metacloud3-generic
+Package: linux-tools-3.10.53-metacloud5-generic
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-tools-3.10.53-metacloud3
-Description: Linux kernel version specific tools for version 3.10.53-metacloud3
+Depends: ${misc:Depends}, linux-tools-3.10.53-metacloud5
+Description: Linux kernel version specific tools for version 3.10.53-metacloud5
  This package provides the architecture dependant parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy) for
- version 3.10.53-metacloud3 on
+ version 3.10.53-metacloud5 on
  64 bit x86.
 
 Package: linux-udebs-generic
@@ -190,7 +190,7 @@ Description: Metapackage depending on kernel udebs
  for easier version and migration tracking.
 
 
-Package: linux-image-3.10.53-metacloud3-generic-lpae
+Package: linux-image-3.10.53-metacloud5-generic-lpae
 Architecture: armhf
 Section: kernel
 Priority: optional
@@ -199,7 +199,7 @@ Provides: linux-image, linux-image-3.0, fuse-module, kvm-api-4, redhat-cluster-m
 Depends: ${misc:Depends}, ${shlibs:Depends}, initramfs-tools (>= 0.36ubuntu6), module-init-tools (>= 3.3-pre11-4ubuntu3)
 Conflicts: hotplug (<< 0.0.20040105-1)
 Recommends: flash-kernel [armhf]
-Suggests: fdutils, linux-doc-3.10.53 | linux-source-3.10.53, linux-tools, linux-headers-3.10.53-metacloud3-generic-lpae
+Suggests: fdutils, linux-doc-3.10.53 | linux-source-3.10.53, linux-tools, linux-headers-3.10.53-metacloud5-generic-lpae
 Description: Linux kernel image for version 3.10.53 on 64 bit x86 SMP
  This package contains the Linux kernel image for version 3.10.53 on
  64 bit x86 SMP.
@@ -216,11 +216,11 @@ Description: Linux kernel image for version 3.10.53 on 64 bit x86 SMP
  the linux-generic-lpae meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-image-extra-3.10.53-metacloud3-generic-lpae
+Package: linux-image-extra-3.10.53-metacloud5-generic-lpae
 Architecture: armhf
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.10.53-metacloud3-generic-lpae, crda (>=1.1.1-1ubuntu2) | wireless-crda
+Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.10.53-metacloud5-generic-lpae, crda (>=1.1.1-1ubuntu2) | wireless-crda
 Description: Linux kernel extra modules for version 3.10.53 on 64 bit x86 SMP
  This package contains the Linux kernel extra modules for version 3.10.53 on
  64 bit x86 SMP.
@@ -237,20 +237,20 @@ Description: Linux kernel extra modules for version 3.10.53 on 64 bit x86 SMP
  the linux-generic-lpae meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-headers-3.10.53-metacloud3-generic-lpae
+Package: linux-headers-3.10.53-metacloud5-generic-lpae
 Architecture: armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-headers-3.10.53-metacloud3, ${shlibs:Depends}
+Depends: ${misc:Depends}, linux-headers-3.10.53-metacloud5, ${shlibs:Depends}
 Provides: linux-headers, linux-headers-3.0
 Description: Linux kernel headers for version 3.10.53 on 64 bit x86 SMP
  This package provides kernel header files for version 3.10.53 on
  64 bit x86 SMP.
  .
  This is for sites that want the latest kernel headers.  Please read
- /usr/share/doc/linux-headers-3.10.53-metacloud3/debian.README.gz for details.
+ /usr/share/doc/linux-headers-3.10.53-metacloud5/debian.README.gz for details.
 
-Package: linux-image-3.10.53-metacloud3-generic-lpae-dbgsym
+Package: linux-image-3.10.53-metacloud5-generic-lpae-dbgsym
 Architecture: armhf
 Section: devel
 Priority: optional
@@ -266,15 +266,15 @@ Description: Linux kernel debug image for version 3.10.53 on 64 bit x86 SMP
  is uncompressed, and unstripped. This package also includes the
  unstripped modules.
 
-Package: linux-tools-3.10.53-metacloud3-generic-lpae
+Package: linux-tools-3.10.53-metacloud5-generic-lpae
 Architecture: armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-tools-3.10.53-metacloud3
-Description: Linux kernel version specific tools for version 3.10.53-metacloud3
+Depends: ${misc:Depends}, linux-tools-3.10.53-metacloud5
+Description: Linux kernel version specific tools for version 3.10.53-metacloud5
  This package provides the architecture dependant parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy) for
- version 3.10.53-metacloud3 on
+ version 3.10.53-metacloud5 on
  64 bit x86.
 
 Package: linux-udebs-generic-lpae

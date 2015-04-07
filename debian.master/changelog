@@ -1,3 +1,15 @@
+linux (3.10.53-metacloud5.201411251146) precise; urgency=low
+
+  Add bugfix from https://bugzilla.redhat.com/show_bug.cgi?id=1189241* 
+
+ -- David Pippenger <pip@metacloud.com>  Mon, 06 Apr 2015 15:35:06 -0700
+
+linux (3.10.53-metacloud4.201411251146) precise; urgency=low
+
+  * Include megaraid driver from rhel to support UCS gear
+
+ -- David Pippenger <pip@metacloud.com>  Fri, 20 Mar 2015 13:44:56 -0700
+
 linux (3.10.53-metacloud3.201411251146) precise; urgency=low
 
   * Add fix for MTRR being set too high for seabios machine types
