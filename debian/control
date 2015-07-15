@@ -57,7 +57,7 @@ Description: Linux kernel version specific tools for version 3.10.53
  version locked tools (such as perf and x86_energy_perf_policy) for
  version PGKVER.
 
-Package: linux-headers-3.10.53-metacloud5
+Package: linux-headers-3.10.53-metacloud6
 Architecture: all
 Section: devel
 Priority: optional
@@ -65,7 +65,7 @@ Depends: ${misc:Depends}, coreutils | fileutils (>= 4.0)
 Description: Header files related to Linux kernel version 3.10.53
  This package provides kernel header files for version 3.10.53, for sites
  that want the latest kernel headers. Please read
- /usr/share/doc/linux-headers-3.10.53-metacloud5/debian.README.gz for details
+ /usr/share/doc/linux-headers-3.10.53-metacloud6/debian.README.gz for details
 
 Package: linux-libc-dev
 Architecture: i386 amd64 armhf arm64 x32 powerpc
@@ -80,20 +80,20 @@ Description: Linux Kernel Headers for development
  libraries. They are NOT meant to be used to build third-party modules for
  your kernel. Use linux-headers-* packages for that.
 
-Package: linux-tools-3.10.53-metacloud5
+Package: linux-tools-3.10.53-metacloud6
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
 Depends: ${misc:Depends}, ${shlibs:Depends}, linux-tools-common
-Description: Linux kernel version specific tools for version 3.10.53-metacloud5
+Description: Linux kernel version specific tools for version 3.10.53-metacloud6
  This package provides the architecture dependant parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy) for
- version 3.10.53-metacloud5 on
+ version 3.10.53-metacloud6 on
  64 bit x86.
- You probabally want to install linux-tools-3.10.53-metacloud5-<flavour>.
+ You probabally want to install linux-tools-3.10.53-metacloud6-<flavour>.
 
 
-Package: linux-image-3.10.53-metacloud5-generic
+Package: linux-image-3.10.53-metacloud6-generic
 Architecture: i386 amd64 armhf
 Section: kernel
 Priority: optional
@@ -102,7 +102,7 @@ Provides: linux-image, linux-image-3.0, fuse-module, kvm-api-4, redhat-cluster-m
 Depends: ${misc:Depends}, ${shlibs:Depends}, initramfs-tools (>= 0.36ubuntu6), module-init-tools (>= 3.3-pre11-4ubuntu3)
 Conflicts: hotplug (<< 0.0.20040105-1)
 Recommends: grub-pc [i386 amd64 x32] | grub-efi-amd64 [amd64 x32] | grub-efi-ia32 [i386 amd64 x32] | grub [i386 amd64 x32] | lilo (>= 19.1) [i386 amd64 x32] | flash-kernel [armhf arm64]
-Suggests: fdutils, linux-doc-3.10.53 | linux-source-3.10.53, linux-tools, linux-headers-3.10.53-metacloud5-generic
+Suggests: fdutils, linux-doc-3.10.53 | linux-source-3.10.53, linux-tools, linux-headers-3.10.53-metacloud6-generic
 Description: Linux kernel image for version 3.10.53 on 64 bit x86 SMP
  This package contains the Linux kernel image for version 3.10.53 on
  64 bit x86 SMP.
@@ -119,11 +119,11 @@ Description: Linux kernel image for version 3.10.53 on 64 bit x86 SMP
  the linux-generic meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-image-extra-3.10.53-metacloud5-generic
+Package: linux-image-extra-3.10.53-metacloud6-generic
 Architecture: i386 amd64 armhf
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.10.53-metacloud5-generic, crda (>=1.1.1-1ubuntu2) | wireless-crda
+Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.10.53-metacloud6-generic, crda (>=1.1.1-1ubuntu2) | wireless-crda
 Description: Linux kernel extra modules for version 3.10.53 on 64 bit x86 SMP
  This package contains the Linux kernel extra modules for version 3.10.53 on
  64 bit x86 SMP.
@@ -140,20 +140,20 @@ Description: Linux kernel extra modules for version 3.10.53 on 64 bit x86 SMP
  the linux-generic meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-headers-3.10.53-metacloud5-generic
+Package: linux-headers-3.10.53-metacloud6-generic
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-headers-3.10.53-metacloud5, ${shlibs:Depends}
+Depends: ${misc:Depends}, linux-headers-3.10.53-metacloud6, ${shlibs:Depends}
 Provides: linux-headers, linux-headers-3.0
 Description: Linux kernel headers for version 3.10.53 on 64 bit x86 SMP
  This package provides kernel header files for version 3.10.53 on
  64 bit x86 SMP.
  .
  This is for sites that want the latest kernel headers.  Please read
- /usr/share/doc/linux-headers-3.10.53-metacloud5/debian.README.gz for details.
+ /usr/share/doc/linux-headers-3.10.53-metacloud6/debian.README.gz for details.
 
-Package: linux-image-3.10.53-metacloud5-generic-dbgsym
+Package: linux-image-3.10.53-metacloud6-generic-dbgsym
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
@@ -169,15 +169,15 @@ Description: Linux kernel debug image for version 3.10.53 on 64 bit x86 SMP
  is uncompressed, and unstripped. This package also includes the
  unstripped modules.
 
-Package: linux-tools-3.10.53-metacloud5-generic
+Package: linux-tools-3.10.53-metacloud6-generic
 Architecture: i386 amd64 armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-tools-3.10.53-metacloud5
-Description: Linux kernel version specific tools for version 3.10.53-metacloud5
+Depends: ${misc:Depends}, linux-tools-3.10.53-metacloud6
+Description: Linux kernel version specific tools for version 3.10.53-metacloud6
  This package provides the architecture dependant parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy) for
- version 3.10.53-metacloud5 on
+ version 3.10.53-metacloud6 on
  64 bit x86.
 
 Package: linux-udebs-generic
@@ -190,7 +190,7 @@ Description: Metapackage depending on kernel udebs
  for easier version and migration tracking.
 
 
-Package: linux-image-3.10.53-metacloud5-generic-lpae
+Package: linux-image-3.10.53-metacloud6-generic-lpae
 Architecture: armhf
 Section: kernel
 Priority: optional
@@ -199,7 +199,7 @@ Provides: linux-image, linux-image-3.0, fuse-module, kvm-api-4, redhat-cluster-m
 Depends: ${misc:Depends}, ${shlibs:Depends}, initramfs-tools (>= 0.36ubuntu6), module-init-tools (>= 3.3-pre11-4ubuntu3)
 Conflicts: hotplug (<< 0.0.20040105-1)
 Recommends: flash-kernel [armhf]
-Suggests: fdutils, linux-doc-3.10.53 | linux-source-3.10.53, linux-tools, linux-headers-3.10.53-metacloud5-generic-lpae
+Suggests: fdutils, linux-doc-3.10.53 | linux-source-3.10.53, linux-tools, linux-headers-3.10.53-metacloud6-generic-lpae
 Description: Linux kernel image for version 3.10.53 on 64 bit x86 SMP
  This package contains the Linux kernel image for version 3.10.53 on
  64 bit x86 SMP.
@@ -216,11 +216,11 @@ Description: Linux kernel image for version 3.10.53 on 64 bit x86 SMP
  the linux-generic-lpae meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-image-extra-3.10.53-metacloud5-generic-lpae
+Package: linux-image-extra-3.10.53-metacloud6-generic-lpae
 Architecture: armhf
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.10.53-metacloud5-generic-lpae, crda (>=1.1.1-1ubuntu2) | wireless-crda
+Depends: ${misc:Depends}, ${shlibs:Depends}, linux-image-3.10.53-metacloud6-generic-lpae, crda (>=1.1.1-1ubuntu2) | wireless-crda
 Description: Linux kernel extra modules for version 3.10.53 on 64 bit x86 SMP
  This package contains the Linux kernel extra modules for version 3.10.53 on
  64 bit x86 SMP.
@@ -237,20 +237,20 @@ Description: Linux kernel extra modules for version 3.10.53 on 64 bit x86 SMP
  the linux-generic-lpae meta-package, which will ensure that upgrades work
  correctly, and that supporting packages are also installed.
 
-Package: linux-headers-3.10.53-metacloud5-generic-lpae
+Package: linux-headers-3.10.53-metacloud6-generic-lpae
 Architecture: armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-headers-3.10.53-metacloud5, ${shlibs:Depends}
+Depends: ${misc:Depends}, linux-headers-3.10.53-metacloud6, ${shlibs:Depends}
 Provides: linux-headers, linux-headers-3.0
 Description: Linux kernel headers for version 3.10.53 on 64 bit x86 SMP
  This package provides kernel header files for version 3.10.53 on
  64 bit x86 SMP.
  .
  This is for sites that want the latest kernel headers.  Please read
- /usr/share/doc/linux-headers-3.10.53-metacloud5/debian.README.gz for details.
+ /usr/share/doc/linux-headers-3.10.53-metacloud6/debian.README.gz for details.
 
-Package: linux-image-3.10.53-metacloud5-generic-lpae-dbgsym
+Package: linux-image-3.10.53-metacloud6-generic-lpae-dbgsym
 Architecture: armhf
 Section: devel
 Priority: optional
@@ -266,15 +266,15 @@ Description: Linux kernel debug image for version 3.10.53 on 64 bit x86 SMP
  is uncompressed, and unstripped. This package also includes the
  unstripped modules.
 
-Package: linux-tools-3.10.53-metacloud5-generic-lpae
+Package: linux-tools-3.10.53-metacloud6-generic-lpae
 Architecture: armhf
 Section: devel
 Priority: optional
-Depends: ${misc:Depends}, linux-tools-3.10.53-metacloud5
-Description: Linux kernel version specific tools for version 3.10.53-metacloud5
+Depends: ${misc:Depends}, linux-tools-3.10.53-metacloud6
+Description: Linux kernel version specific tools for version 3.10.53-metacloud6
  This package provides the architecture dependant parts for kernel
  version locked tools (such as perf and x86_energy_perf_policy) for
- version 3.10.53-metacloud5 on
+ version 3.10.53-metacloud6 on
  64 bit x86.
 
 Package: linux-udebs-generic-lpae
@@ -287,11 +287,11 @@ Description: Metapackage depending on kernel udebs
  for easier version and migration tracking.
 
 
-Package: kernel-image-3.10.53-metacloud5-generic-di
+Package: kernel-image-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: kernel-image, efi-modules, ext3-modules, ext4-modules
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: extra
 Description: Linux kernel binary image for the Debian installer
@@ -299,369 +299,369 @@ Description: Linux kernel binary image for the Debian installer
  boot images. It does _not_ provide a usable kernel for your full
  Debian system.
 
-Package: nic-modules-3.10.53-metacloud5-generic-di
+Package: nic-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: nic-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, nic-shared-modules-3.10.53-metacloud5-generic-di, virtio-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, nic-shared-modules-3.10.53-metacloud6-generic-di, virtio-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Network interface support
 
-Package: nic-shared-modules-3.10.53-metacloud5-generic-di
+Package: nic-shared-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: nic-shared-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, crypto-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, crypto-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: nic shared modules
   This package contains modules which support nic modules
 
-Package: serial-modules-3.10.53-metacloud5-generic-di
+Package: serial-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: serial-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Serial port support
 
-Package: ppp-modules-3.10.53-metacloud5-generic-di
+Package: ppp-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: ppp-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, nic-shared-modules-3.10.53-metacloud5-generic-di, serial-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, nic-shared-modules-3.10.53-metacloud6-generic-di, serial-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: PPP (serial port) networking support
 
-Package: pata-modules-3.10.53-metacloud5-generic-di
+Package: pata-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: pata-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, storage-core-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, storage-core-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: PATA support modules
 
-Package: firewire-core-modules-3.10.53-metacloud5-generic-di
+Package: firewire-core-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: firewire-core-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, storage-core-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, storage-core-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Firewire (IEEE-1394) Support
 
-Package: scsi-modules-3.10.53-metacloud5-generic-di
+Package: scsi-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: scsi-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, storage-core-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, storage-core-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: SCSI storage support
 
-Package: plip-modules-3.10.53-metacloud5-generic-di
+Package: plip-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: plip-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, nic-shared-modules-3.10.53-metacloud5-generic-di, parport-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, nic-shared-modules-3.10.53-metacloud6-generic-di, parport-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: PLIP (parallel port) networking support
 
-Package: floppy-modules-3.10.53-metacloud5-generic-di
+Package: floppy-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: floppy-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Floppy driver support
 
-Package: fat-modules-3.10.53-metacloud5-generic-di
+Package: fat-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: fat-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: FAT filesystem support
  This includes Windows FAT and VFAT support.
 
-Package: nfs-modules-3.10.53-metacloud5-generic-di
+Package: nfs-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: nfs-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: NFS filesystem drivers
  Includes the NFS client driver, and supporting modules.
 
-Package: md-modules-3.10.53-metacloud5-generic-di
+Package: md-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: md-modules, crypto-dm-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Multi-device support (raid, device-mapper, lvm)
 
-Package: multipath-modules-3.10.53-metacloud5-generic-di
+Package: multipath-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: multipath-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: extra
 Description: DM-Multipath support
   This package contains modules for device-mapper multipath support.
 
-Package: usb-modules-3.10.53-metacloud5-generic-di
+Package: usb-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: usb-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, storage-core-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, storage-core-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Core USB support
 
-Package: pcmcia-storage-modules-3.10.53-metacloud5-generic-di
+Package: pcmcia-storage-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: pcmcia-storage-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, scsi-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, scsi-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: PCMCIA storage support
 
-Package: fb-modules-3.10.53-metacloud5-generic-di
+Package: fb-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: fb-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Framebuffer modules
 
-Package: input-modules-3.10.53-metacloud5-generic-di
+Package: input-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: input-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, usb-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, usb-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Support for various input methods
 
-Package: mouse-modules-3.10.53-metacloud5-generic-di
+Package: mouse-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: mouse-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, input-modules-3.10.53-metacloud5-generic-di, usb-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, input-modules-3.10.53-metacloud6-generic-di, usb-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: extra
 Description: Mouse support
  This package contains mouse drivers for the Linux kernel.
 
-Package: irda-modules-3.10.53-metacloud5-generic-di
+Package: irda-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: irda-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, nic-shared-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, nic-shared-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Support for Infrared protocols
 
-Package: parport-modules-3.10.53-metacloud5-generic-di
+Package: parport-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: parport-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Parallel port support
 
-Package: nic-pcmcia-modules-3.10.53-metacloud5-generic-di
+Package: nic-pcmcia-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: nic-pcmcia-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, nic-shared-modules-3.10.53-metacloud5-generic-di, nic-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, nic-shared-modules-3.10.53-metacloud6-generic-di, nic-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: PCMCIA network interface support
 
-Package: pcmcia-modules-3.10.53-metacloud5-generic-di
+Package: pcmcia-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: pcmcia-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: PCMCIA Modules
 
-Package: nic-usb-modules-3.10.53-metacloud5-generic-di
+Package: nic-usb-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: nic-usb-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, nic-shared-modules-3.10.53-metacloud5-generic-di, usb-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, nic-shared-modules-3.10.53-metacloud6-generic-di, usb-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: USB network interface support
 
-Package: sata-modules-3.10.53-metacloud5-generic-di
+Package: sata-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: sata-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, storage-core-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, storage-core-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: SATA storage support
 
-Package: crypto-modules-3.10.53-metacloud5-generic-di
+Package: crypto-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: crypto-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: extra
 Description: crypto modules
  This package contains crypto modules.
 
-Package: squashfs-modules-3.10.53-metacloud5-generic-di
+Package: squashfs-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: squashfs-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: extra
 Description: squashfs modules
  This package contains squashfs modules.
 
-Package: speakup-modules-3.10.53-metacloud5-generic-di
+Package: speakup-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: speakup-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: extra
 Description: speakup modules
  This package contains speakup modules.
 
-Package: virtio-modules-3.10.53-metacloud5-generic-di
+Package: virtio-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: virtio-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: VirtIO Modules
  Includes modules for VirtIO (virtual machine, generally kvm guests)
 
-Package: fs-core-modules-3.10.53-metacloud5-generic-di
+Package: fs-core-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: fs-core-modules, ext2-modules, jfs-modules, reiserfs-modules, xfs-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Base filesystem modules
  This includes jfs, reiserfs and xfs.
 
-Package: fs-secondary-modules-3.10.53-metacloud5-generic-di
+Package: fs-secondary-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: fs-secondary-modules, btrfs-modules, ntfs-modules, hfs-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, fat-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, fat-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Extra filesystem modules
  This includes support for Windows NTFS and MacOS HFS/HFSPlus
 
-Package: storage-core-modules-3.10.53-metacloud5-generic-di
+Package: storage-core-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: storage-core-modules, loop-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Core storage support
  Includes core SCSI, LibATA, USB-Storage. Also includes related block
  devices for CD, Disk and Tape medium (and IDE Floppy).
 
-Package: block-modules-3.10.53-metacloud5-generic-di
+Package: block-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: block-modules, nbd-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, storage-core-modules-3.10.53-metacloud5-generic-di, parport-modules-3.10.53-metacloud5-generic-di, virtio-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, storage-core-modules-3.10.53-metacloud6-generic-di, parport-modules-3.10.53-metacloud6-generic-di, virtio-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Block storage devices
  This package contains the block storage devices, including DAC960 and
  paraide.
 
-Package: message-modules-3.10.53-metacloud5-generic-di
+Package: message-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: message-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di, storage-core-modules-3.10.53-metacloud5-generic-di, scsi-modules-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di, storage-core-modules-3.10.53-metacloud6-generic-di, scsi-modules-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: Fusion and i2o storage modules
  This package containes the fusion and i2o storage modules.
 
-Package: vlan-modules-3.10.53-metacloud5-generic-di
+Package: vlan-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: vlan-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: extra
 Description: vlan modules
  This package contains vlan (8021.Q) modules.
 
-Package: ipmi-modules-3.10.53-metacloud5-generic-di
+Package: ipmi-modules-3.10.53-metacloud6-generic-di
 XC-Package-Type: udeb
 Provides: ipmi-modules
-Depends: kernel-image-3.10.53-metacloud5-generic-di
+Depends: kernel-image-3.10.53-metacloud6-generic-di
 Architecture: amd64
-XB-Kernel-Version: 3.10.53-metacloud5-generic
+XB-Kernel-Version: 3.10.53-metacloud6-generic
 Section: debian-installer
 Priority: standard
 Description: ipmi modules

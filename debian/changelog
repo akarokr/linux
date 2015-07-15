@@ -1,3 +1,9 @@
+linux (3.10.53-metacloud6.201411251146) precise; urgency=low
+
+  * Added Intel X710 driver i40e
+
+ -- David Pippenger <pip@metacloud.com>  Tue, 14 Jul 2015 13:24:15 -0700
+
 linux (3.10.53-metacloud5.201411251146) precise; urgency=low
 
   Add bugfix from https://bugzilla.redhat.com/show_bug.cgi?id=1189241* 
